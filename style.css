@@ -147,6 +147,7 @@ section{
 
 .section-container{
     display: flex;
+    display:in-line block;
 }
 
 /*PROFILE SECTION*/ 
