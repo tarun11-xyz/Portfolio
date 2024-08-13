@@ -181,7 +181,21 @@ section{
 .section__text__p2{
     font-size: 1.5rem;
     margin-bottom: 1rem;
+border-right: 5px solid;
+width:100%;
+white-space: nowrap ;
+overflow: hidden;
+animation:
+typing 2s ,
+cursor .4s step-end-infinite alternate;
 }
+@keyframes cursor {
+  50% { border-color :transparent }
+}
+@keyframes typing{
+  from { width: 0 }
+}
+
 
 .title{
     font-size: 3rem;
