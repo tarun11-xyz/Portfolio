@@ -5,7 +5,5 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#loco'),
-    smooth: true
-});
+
+
