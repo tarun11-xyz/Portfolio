@@ -342,7 +342,7 @@ footer{
     width: 800px;
     opacity: 80%;
     background-image: radial-gradient(closest-side, rgba(255,230,0,0.21), #00000000);
-}
+}/*
 .dots-3{
     z-index: -99999;
     position: absolute;
@@ -387,4 +387,4 @@ footer{
     min-width:800px;
     opacity: 80%;
     background-image: radial-gradient(closest-side, rgba(255,230,0,0.21), #00000000);
-}
+}*/
