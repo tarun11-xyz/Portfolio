@@ -138,8 +138,8 @@ a:hover{
     padding: 10px;
     text-align:center;
     font-size: 1.5rem;
-    color: #8eff86;
-    border-bottom: 0.1px solid #8eff86;
+    color: #6A3AEE;
+    border-bottom: 0.1px solid #6A3AEE;
     text-decoration:none;
     transition: all 0.3 ease-in-out ;
 
@@ -211,7 +211,7 @@ section{
 .section__text{
     align-self: center;
 
-    color: #8fff86;
+    color: #6A3AEE;
     text-align: center;
 
 }
@@ -269,7 +269,7 @@ section{
     padding: 0.7rem ;
     width: 8rem;
     border-radius: 0rem;
-    color: #8fff86;
+    color: #6A3AEE;
     backdrop-filter: blur(10px);
     font-weight: 500;
     
@@ -277,7 +277,7 @@ section{
 }
 
 .btn-color-1, .btn-color-2{
-    border: #8fff86 0.1rem solid ;
+    border: #6A3AEE 0.1rem solid ;
 }
 
 
@@ -287,24 +287,24 @@ section{
     
 }
 .btn-color-1,.btn-color-2:hover{
-    background: #8fff86;
+    background: #6A3AEE;
     color: #000;
 
 }
 
 .btn-color-1:hover{
     background:#8fff86 0.1rem solid;
-    box-shadow: 0 0 10px #8eff8694,0 0 40px #8eff86b2,0 0 80px #8eff86;
-    background: #8eff86;
+    box-shadow: 0 0 10px #6A3AEE,0 0 40px #6A3AEE,0 0 80px #6A3AEE;
+    background: #6A3AEE;
     
 }
 .btn-color-2{
     background: none;
 }
 .btn-color-2:hover{
-    background:#8fff86 0.1rem solid;
-    box-shadow: 0 0 10px #8eff8694,0 0 40px #8eff86b2,0 0 80px #8eff86;
-    background: #8fff86;
+    background:#6A3AEE 0.1rem solid;
+    box-shadow: 0 0 10px #6A3AEE,0 0 40px #6A3AEE,0 0 80px #6A3AEE;
+    background: #6A3AEE;
 }
 .btn-container{
     gap: 1rem;
@@ -353,7 +353,7 @@ section{
     
     background: rgb(0, 0, 0);
     border-radius: 0rem;
-    border: #8fff86 0.1rem solid ;
+    border: #6A3AEE 0.1rem solid ;
 
     text-align: center;
 }
@@ -400,7 +400,7 @@ section{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    color: #8eff86;
+    color: #6A3AEE;
     gap: 2.5rem;
 }
 article{
@@ -432,11 +432,11 @@ article .icon{
 
 .project-title{
     margin: 1rem;
-    color: #8eff86;
+    color: #6A3AEE;
 }
 .project-btn{
     color: rgb(255, 255, 255);
-    border-color: #8eff86;
+    border-color: #6A3AEE;
 }
 
 /*CONTACT*/
@@ -617,13 +617,13 @@ footer p{
     max-height:70vh;
     min-height:70vh;
     opacity: 5%;
-    color: #8fff86;
+    color: #6A3AEE;
     
     
     
 }
 #looptext  h1 span{
-    -webkit-text-stroke: 10px #8fff86;
+    -webkit-text-stroke: 10px #6A3AEE;
     color: transparent;
 }
 #looptext h1{
@@ -662,7 +662,7 @@ footer p{
     background-color: transparent;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #8eff86;
+    background-color: #6A3AEE /*#8eff86*/;
     border:1px solid  transparent;
     border-top: 70px solid transparent;
     background-clip: content-box;
@@ -763,7 +763,7 @@ footer p{
     right: 100%;
     height: 100%;
     width: 100%;
-    background: #8eff86;
+    background: #6A3AEE;
     }
   .pace.pace-inactive {
     display: none;
@@ -785,5 +785,5 @@ footer p{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #8eff86;
+    color: #6A3AEE;
 }
