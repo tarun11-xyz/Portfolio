@@ -41,7 +41,7 @@ html{
     scroll-behavior: smooth;
 }
 p{
-    color: #8fff86;
+    color: #6A3AEE;
     font-family: NeueMachina;
     font-style: inherit;
 }
@@ -73,7 +73,7 @@ nav{
     font-size: 1.5rem;
 }
 a{
-    color: #8fff86;
+    color: #6A3AEE;
     text-decoration: none;
     font-family: NeueMachina;
 }
