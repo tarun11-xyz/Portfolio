@@ -8,7 +8,7 @@
     }
     body{
      overflow-x: hidden;
-    }  
+    } } 
     
 @media screen and (max-width:1200px) {
     body {
@@ -55,6 +55,9 @@
         #contact, footer{
             height: 40vh;
 
+        }
+        body {
+            overflow-x: hidden;
         }
         #profile{
             height: 83vh;
