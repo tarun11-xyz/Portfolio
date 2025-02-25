@@ -9,7 +9,7 @@
     body{
      overflow-x: hidden;
     }
-    #looptext{
+/*     #looptext{
 overflow-x:hidden;
 }
 .dots{
@@ -25,7 +25,7 @@ overflow-x:hidden;
 .dots-6{
         right: 30%;}
  } 
-
+ */
 
 @media screen and (max-width:1200px) {
     body{
@@ -35,7 +35,7 @@ overflow-x:hidden;
     overflow-x: hidden;
     
 }
-       #looptext{
+/*        #looptext{
 overflow-x:hidden;
 }
 .dots{
@@ -50,7 +50,7 @@ overflow-x:hidden;
     left: -40%;}
 .dots-6{
         right: 30%;}
- } 
+ }  */
     #dekstop-nav{
         display: none;
     }
@@ -88,7 +88,7 @@ overflow-x:hidden;
     }
     @media screen and (max-width:600px) {
 
-        #looptext{
+/*         #looptext{
 overflow-x:hidden;
 }
 .dots{
@@ -103,7 +103,7 @@ overflow-x:hidden;
     left: -40%;}
 .dots-6{
         right: 30%;}
- } 
+ }  */
 
         #contact, footer{
             height: 40vh;
