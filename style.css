@@ -615,6 +615,7 @@ footer p{
 }
 
 #looptext{
+
     white-space: nowrap;
     font-family: neuemachina;
     top: 20vh;
@@ -626,7 +627,7 @@ footer p{
     min-height:70vh;
     opacity: 5%;
     color: #8eff86;
-     overflow-x:hidden;
+     
     
     
 }
