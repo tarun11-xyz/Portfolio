@@ -596,6 +596,7 @@ footer p{
     background-image: radial-gradient(closest-side, rgba(255,230,0,0.21), #00000000);
 }
 .dots-6{
+ overflow-x:hidden;
     z-index: -99999;
     position: absolute;
     right: -35%;
