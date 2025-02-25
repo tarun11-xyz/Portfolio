@@ -8,8 +8,27 @@
     }
     body{
      overflow-x: hidden;
-    } } 
-    
+    }
+    #looptext{
+overflow-x:hidden;
+}
+.dots{
+    overflow-x:hidden;}
+.dots-1{
+    overflow-x:hidden;}
+.dots-2{
+    overflow-x:hidden;}
+.dots-3{
+    overflow-x:hidden;}
+.dots-4{
+    overflow-x:hidden;}
+.dots-5{
+    overflow-x:hidden;}
+.dots-6{
+    overflow-x:hidden;}
+ } 
+
+
 @media screen and (max-width:1200px) {
     body{
         max-width: 100vw;
@@ -18,6 +37,24 @@
     overflow-x: hidden;
     
 }
+    #looptext{
+overflow-x:hidden;
+}
+.dots{
+    overflow-x:hidden;}
+.dots-1{
+    overflow-x:hidden;}
+.dots-2{
+    overflow-x:hidden;}
+.dots-3{
+    overflow-x:hidden;}
+.dots-4{
+    overflow-x:hidden;}
+.dots-5{
+    overflow-x:hidden;}
+.dots-6{
+    overflow-x:hidden;}
+
     #dekstop-nav{
         display: none;
     }
@@ -54,6 +91,24 @@
        }
     }
     @media screen and (max-width:600px) {
+
+    #looptext{
+overflow-x:hidden;
+}
+.dots{
+    overflow-x:hidden;}
+.dots-1{
+    overflow-x:hidden;}
+.dots-2{
+    overflow-x:hidden;}
+.dots-3{
+    overflow-x:hidden;}
+.dots-4{
+    overflow-x:hidden;}
+.dots-5{
+    overflow-x:hidden;}
+.dots-6{
+    overflow-x:hidden;}
 
         #contact, footer{
             height: 40vh;
