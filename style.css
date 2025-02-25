@@ -543,6 +543,7 @@ footer p{
     z-index: -99999;
     position: absolute;
     right: -20%;
+ overflow-x:hidden;
     top: -200px;
     height: 800px;
     width: 800px;
@@ -558,6 +559,7 @@ footer p{
    left: -20%;
     top: 250px;
     height: 800px;
+ overflow-x:hidden;
     width: 800px;
     opacity: 80%;
     background-image: radial-gradient(closest-side, rgba(255,230,0,0.21), #00000000);
@@ -572,6 +574,7 @@ footer p{
     max-width:800px;
     min-width:800px;
     opacity: 80%;
+ overflow-x:hidden;
     background-image: radial-gradient(closest-side, rgba(255,230,0,0.21), #00000000);
 }
 
@@ -584,8 +587,10 @@ footer p{
     width: 800px;
     opacity: 80%;
     background-image: radial-gradient(closest-side, rgba(255,230,0,0.21), #00000000);
+ overflow-x:hidden;
 }
 .dots-5{
+ overflow-x:hidden;
     z-index: -99999;
     position: absolute;
    left: -20%;
