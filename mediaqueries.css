@@ -13,19 +13,17 @@
 overflow-x:hidden;
 }
 .dots{
-    overflow-x:hidden;}
-.dots-1{
-    overflow-x:hidden;}
+    right: 20%;}
 .dots-2{
-    overflow-x:hidden;}
+    left: -50%;}
 .dots-3{
-    overflow-x:hidden;}
+    right: 20%;}
 .dots-4{
-    overflow-x:hidden;}
+            left: -50%;}
 .dots-5{
-    overflow-x:hidden;}
+    left: -40%;}
 .dots-6{
-    overflow-x:hidden;}
+        right: 30%;}
  } 
 
 
@@ -37,24 +35,22 @@ overflow-x:hidden;
     overflow-x: hidden;
     
 }
-    #looptext{
+       #looptext{
 overflow-x:hidden;
 }
 .dots{
-    overflow-x:hidden;}
-.dots-1{
-    overflow-x:hidden;}
+    right: 20%;}
 .dots-2{
-    overflow-x:hidden;}
+    left: -50%;}
 .dots-3{
-    overflow-x:hidden;}
+    right: 20%;}
 .dots-4{
-    overflow-x:hidden;}
+            left: -50%;}
 .dots-5{
-    overflow-x:hidden;}
+    left: -40%;}
 .dots-6{
-    overflow-x:hidden;}
-
+        right: 30%;}
+ } 
     #dekstop-nav{
         display: none;
     }
@@ -92,23 +88,22 @@ overflow-x:hidden;
     }
     @media screen and (max-width:600px) {
 
-    #looptext{
+        #looptext{
 overflow-x:hidden;
 }
 .dots{
-    overflow-x:hidden;}
-.dots-1{
-    overflow-x:hidden;}
+    right: 20%;}
 .dots-2{
-    overflow-x:hidden;}
+    left: -50%;}
 .dots-3{
-    overflow-x:hidden;}
+    right: 20%;}
 .dots-4{
-    overflow-x:hidden;}
+            left: -50%;}
 .dots-5{
-    overflow-x:hidden;}
+    left: -40%;}
 .dots-6{
-    overflow-x:hidden;}
+        right: 30%;}
+ } 
 
         #contact, footer{
             height: 40vh;
