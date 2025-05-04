@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel = "icon" href = "src/prof.ico" type = "image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Thank You Dr. Kritika Khandelwal</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      * {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      body {
+        background: linear-gradient(to bottom right, #111827, #581c87, #111827);
+        min-height: 100vh;
+        color: #f3f4f6;
+        overflow-y: scroll;
+      }
+
+      .loader {
+        position: fixed;
+        inset: 0;
+        z-index: 50;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #111827;
+        transition: opacity 1s;
+      }
+
+      .loader.hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .loader-text {
+        font-size: 2rem;
+        font-weight: bold;
+        background: linear-gradient(to right, #c084fc, #f472b6);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .cursor {
+        display: inline-block;
+        width: 2px;
+        height: 32px;
+        background-color: #c084fc;
+        animation: blink 0.8s infinite;
+        margin-left: 4px;
+      }
+
+      @keyframes blink {
+        50% { opacity: 0; }
+      }
+
+      .container {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        padding-top: 5rem;
+        padding-bottom: 2.5rem;
+        opacity: 0;
+        transition: opacity 1s;
+      }
+
+      .container.visible {
+        opacity: 1;
+      }
+
+      nav {
+        position: fixed;
+        top: 1rem;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        margin: 0 1rem;
+      }
+
+      .nav-content {
+        max-width: 30rem;
+        margin: 0 auto;
+        background-color: rgba(88, 28, 135, 0.2);
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(168, 85, 247, 0.2);
+        border-radius: 9999px;
+        padding: 0.75rem 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-title {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        background: linear-gradient(to right, #c084fc, #f472b6);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .heart {
+        color: #f472b6;
+        animation: beat 1.5s infinite;
+      }
+
+      @keyframes beat {
+        0%, 100% { transform: scale(1); }
+        25% { transform: scale(1.2); }
+        40% { transform: scale(0.9); }
+        60% { transform: scale(1.1); }
+      }
+
+      .card {
+        max-width: 48rem;
+        margin: 0 auto;
+        background: linear-gradient(to bottom right, rgba(31, 41, 55, 0.9), rgba(88, 28, 135, 0.9));
+        backdrop-filter: blur(8px);
+        border-radius: 0.75rem;
+        overflow: hidden;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(168, 85, 247, 0.2);
+        padding: 1.5rem 2rem;
+      }
+
+      .title {
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+
+      .title h1 {
+        font-size: 2.25rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        background: linear-gradient(to right, #c084fc, #f472b6, #c084fc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        background-size: 200% auto;
+        animation: gradient 8s linear infinite;
+      }
+
+      @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      .title p {
+        color: #d8b4fe;
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+
+      .separator {
+        height: 1px;
+        background: linear-gradient(to right, transparent, rgba(168, 85, 247, 0.3), transparent);
+        margin: 1.5rem 0;
+      }
+
+      .teacher-image {
+        position: relative;
+        width: 12rem;
+        height: 12rem;
+        margin: 0 auto 2rem;
+        border-radius: 9999px;
+        overflow: hidden;
+        border: 4px solid rgba(168, 85, 247, 0.3);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+      }
+
+      .teacher-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .teacher-image::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(194, 43, 169, 0.5), transparent);
+      }
+
+      .quote {
+        padding: 1rem 1.5rem;
+        background-color: rgba(88, 28, 135, 0.3);
+        backdrop-filter: blur(4px);
+        border-radius: 0.5rem;
+        box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(168, 85, 247, 0.2);
+        transform: scale(1);
+        transition: transform 0.3s;
+      }
+
+      .quote:hover {
+        transform: scale(1.02);
+      }
+
+      .quote blockquote {
+        position: relative;
+        text-align: center;
+      }
+
+      .quote-marks {
+        position: absolute;
+        font-size: 3rem;
+        color: #c084fc;
+        opacity: 0.5;
+      }
+
+      .quote-marks.left {
+        top: -1rem;
+        left: -0.5rem;
+      }
+
+      .quote-marks.right {
+        bottom: -2.5rem;
+        right: -0.5rem;
+      }
+
+      .quote p {
+        font-size: 1.5rem;
+        color: #e9d5ff;
+        font-style: italic;
+        font-weight: 300;
+        padding: 0.5rem 1rem;
+        position: relative;
+        z-index: 10;
+      }
+
+      .teacher-info {
+        margin-top: 2rem;
+        text-align: center;
+      }
+
+      @media (min-width: 768px) {
+        .teacher-info {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          text-align: left;
+        }
+      }
+
+      .impact {
+        flex: 3;
+        margin-right: 2rem;
+      }
+
+      .impact h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #d8b4fe;
+        margin-bottom: 1rem;
+      }
+
+      .impact p {
+        color: #d1d5db;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+      }
+
+      .qualities {
+        flex: 2;
+        background-color: rgba(88, 28, 135, 0.2);
+        backdrop-filter: blur(4px);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid rgba(168, 85, 247, 0.2);
+      }
+
+      .qualities h3 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: #f472b6;
+        margin-bottom: 0.75rem;
+      }
+
+      .qualities ul {
+        list-style: none;
+      }
+
+      .qualities li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+      }
+
+      .qualities li::before {
+        content: '';
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: #f472b6;
+        border-radius: 9999px;
+        margin-right: 0.5rem;
+      }
+
+      .qualities li span {
+        color: #e9d5ff;
+      }
+
+      .signature {
+        margin-top: 2rem;
+        text-align: center;
+      }
+
+      .signature p:first-child {
+        color: #d8b4fe;
+        font-weight: 500;
+      }
+
+      .signature p:last-child {
+        color: #f472b6;
+        font-weight: 700;
+        margin-top: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader" id="loader">
+      <div class="loader-text">
+        <span id="typed-text"></span>
+        <span class="cursor"></span>
+      </div>
+    </div>
+
+    <div class="container" id="content">
+      <nav>
+        <div class="nav-content">
+          <div class="nav-title">
+            <span class="heart">♥</span>
+            For Kritika Mam
+            <span class="heart">♥</span>
+          </div>
+        </div>
+      </nav>
+
+      <div class="card">
+        <div class="title">
+          <h1>Thank You, Dr. Kritika Khandelwal Mam</h1>
+          <p>For Your Guidance & Inspiration</p>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="teacher-image">
+          <img src="src/profile.jpg" alt="Dr. Kritika Khandelwal">
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="quote">
+          <blockquote>
+            <span class="quote-marks left">"</span>
+            <p>Happiness and prosperity</p>
+            <span class="quote-marks right">"</span>
+          </blockquote>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="teacher-info">
+          <div class="impact">
+            <h2>Your Impact Has Been Immeasurable</h2>
+            <p>
+              Dear Dr. Khandelwal, thank you for creating such a friendly environment 
+              for all your students. Your passion for teaching human values has transformed 
+              our understanding and inspired us to be better individuals.
+            </p>
+            <p>
+              Your kindness, wisdom, and dedication have made a lasting impression on 
+              all of us. The lessons we've learned extend far beyond the classroom.
+            </p>
+          </div>
+
+          <div class="qualities">
+            <h3>What Makes You Special</h3>
+            <ul>
+              <li><span>Incredibly supportive</span></li>
+              <li><span>Patient and understanding</span></li>
+              <li><span>Inspirational mentor</span></li>
+              <li><span>Creates a positive atmosphere</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="signature">
+          <p>With heartfelt gratitude,</p>
+          <p>From Tarun, Ghanshyam, Tarun, Mukul, Pankaj</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const loader = document.getElementById('loader');
+      const content = document.getElementById('content');
+      const typedText = document.getElementById('typed-text');
+      const fullText = 'From Section K';
+      let currentIndex = 0;
+
+      function typeText() {
+        if (currentIndex <= fullText.length) {
+          typedText.textContent = fullText.slice(0, currentIndex);
+          currentIndex++;
+          setTimeout(typeText, 100);
+        } else {
+          setTimeout(() => {
+            loader.classList.add('hidden');
+            content.classList.add('visible');
+          }, 800);
+        }
+      }
+
+      typeText();
+    </script>
+  </body>
+</html>
